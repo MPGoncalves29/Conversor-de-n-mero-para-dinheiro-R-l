@@ -1,4 +1,5 @@
-import time, os
+import time
+import os
 
 
 def tempo(z):
@@ -26,9 +27,8 @@ def zero(dec):
     #Adiciona zero se apenas um dígito estiver presente
     if len(dec) == 1:
         dec += "0"
-        return dec
-    else:
-        return dec
+    return dec
+   
     
 def ponto(num):
     cont = 0
@@ -58,9 +58,3 @@ while num > 1*10**16:
         tempo(5)
 
 print(real(num))
-
-#Ou
-'''
-num = float(input("Insira um número: "))
-print(f"R$ {num:.2f}")
-'''
